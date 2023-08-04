@@ -116,7 +116,9 @@
     color: transparent;
     animation: moveBackground 180s infinite linear;
     -webkit-animation: moveBackground 180s infinite linear;
+
 }
+
 
 @keyframes moveBackground {
     0% {
