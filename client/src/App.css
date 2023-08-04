@@ -116,7 +116,9 @@
     color: transparent;
     animation: moveBackground 180s infinite linear;
     -webkit-animation: moveBackground 180s infinite linear;
+
 }
+
 
 @keyframes moveBackground {
     0% {
@@ -251,14 +253,15 @@ padding-top: 25px;
 /* About Us Section */
 
 #AboutUsSection {
-    background-image: url('/assets/mountain.avif');
+    background-image: url('/assets/hero.avif');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: auto;
+    padding-bottom: 200px;
 }
 .aboutUsTitle {
     color: black;
-    padding-top: 60px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +278,7 @@ padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 20px;
     margin-top: 130px;
