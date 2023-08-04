@@ -46,6 +46,9 @@ const ParkSearch = () => {
     }, [searchTerm]);
     return (
         <div className="parkSearchContainer">
+            <h2 id="SearchTitle">
+                Search for a National Park to explore its beauty:
+            </h2>
             <div className="parkSearchBox">
                 <input
                     type="text"
