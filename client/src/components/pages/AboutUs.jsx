@@ -18,15 +18,15 @@ const AboutUsSection = () => {
                         </h4>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             NatureNerds is a cutting-edge web application
                             designed to help users plan exciting activities
                             while discovering the captivating wonders of their
                             chosen national park.
-                        </h5>
+                        </h6>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             With NatureNerds, users can easily select their
                             preferred national park from an extensive database,
                             and instantly access a curated list of thrilling
@@ -34,10 +34,10 @@ const AboutUsSection = () => {
                             levels. Whether you're an intrepid hiker, a nature
                             photographer, or a leisurely stroller, our app will
                             cater to all your preferences.
-                        </h5>
+                        </h6>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             But that's not all! NatureNerds goes beyond
                             traditional planning tools by offering an
                             awe-inspiring feature - stargazing. Using advanced
@@ -48,10 +48,10 @@ const AboutUsSection = () => {
                             constellation, and experiencing the sheer wonder of
                             the universe while surrounded by the beauty of
                             nature.
-                        </h5>
+                        </h6>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             Our user-friendly interface ensures seamless
                             navigation, making the process of generating
                             activities and checking celestial events a breeze.
@@ -59,27 +59,27 @@ const AboutUsSection = () => {
                             park-goer, NatureNerds empowers everyone to make the
                             most of their national park visit, creating memories
                             that will last a lifetime.
-                        </h5>
+                        </h6>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             Join us on this transformative journey of
                             exploration and celestial wonder with NatureNerds -
                             Your gateway to adventure and stargazing magic!
-                        </h5>
+                        </h6>
                     </div>
                     <div>
                         <h4>The Coders behind NatureNerds:</h4>
                     </div>
                     <div>
-                        <h5>
+                        <h6>
                             Hannah Middleton, James Ehteshami, Martin Navarrete
                             and Jonathan Rainey. We share a love for the
                             outdoors and fresh air, and have collectively been
                             to 31 National Parks. We hope that you can utilize
                             NatureNerds to get outside and explore our beautiful
                             parks!
-                        </h5>
+                        </h6>
                     </div>
                 </div>
             </div>
