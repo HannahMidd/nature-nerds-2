@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
+// import { Form, Button, Alert } from "react-bootstrap";
+import Auth from "../../utils/auth";
+import { LOGIN_USER } from "../../utils/Mutations";
 import { Form, Button, Alert } from "react-bootstrap";
 
 import { useMutation } from "@apollo/client";
-import { LOGIN_USER } from "../../../../server/utils/mutations";
-
-import Auth from "../../../../server/utils/auth";
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: "", password: "" });
@@ -62,7 +62,7 @@ const LoginForm = () => {
           show={showAlert}
           variant="danger"
         >
-          Something went wrong with your login credentials!
+          Incorrect login!
         </Alert>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="email">Email</Form.Label>

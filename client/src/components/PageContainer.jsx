@@ -1,22 +1,30 @@
 import React, { useState } from 'react';
-import ParkSearch from './ParkSearch';
 import HomeContent from './Home';
-import AboutUs from './pages/AboutUs';
+import AboutUsSection from "./pages/AboutUs";
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-export default function PageContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
-    const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
-        }
-        if (currentPage === 'AboutUs') {
-            return <AboutUs />;
-        }
-        if (currentPage === 'Login') {
-            return <Login />;
-        }
-    };
-    const handlePageChange = (page) => setCurrentPage(page);
-    return <></>;
+import { capitalizeFirstLetter } from '../../../server/utils/Helpers';
+
+function PageContainer({ currentPage }) {
+
+  const renderPage = () => {
+    switch (name) {
+      case 'about us':
+        return <AboutUsSection />;
+      case 'login':
+        return <Login />;
+      case 'signup':
+        return <Signup />;
+      default:
+        return <HomeContent />;
+    }
+  };
+
+  return (
+    <section>
+      <h2>{capitalizeFirstLetter(name)}</h2>
+      <PageContainer>{renderPage()} </PageContainer>
+    </section>
+  );
 }
+export default PageContainer;

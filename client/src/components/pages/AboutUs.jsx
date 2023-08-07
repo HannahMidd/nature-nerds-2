@@ -13,7 +13,7 @@ const AboutUsSection = () => {
                 <div id="about-Us-text">
                     <div>
                         <h4>
-                            Introducing "NatureNerds" - your ultimate companion
+                            Introducing NatureNerds - your ultimate companion
                             for unforgettable adventures in national parks!
                         </h4>
                     </div>
@@ -31,14 +31,14 @@ const AboutUsSection = () => {
                             preferred national park from an extensive database,
                             and instantly access a curated list of thrilling
                             activities tailored to their interests and fitness
-                            levels. Whether you're an intrepid hiker, a nature
+                            levels. Whether you are an intrepid hiker, a nature
                             photographer, or a leisurely stroller, our app will
                             cater to all your preferences.
                         </h6>
                     </div>
                     <div>
                         <h6>
-                            But that's not all! NatureNerds goes beyond
+                            But that is not all! NatureNerds goes beyond
                             traditional planning tools by offering an
                             awe-inspiring feature - stargazing. Using advanced
                             astronomy algorithms, the app precisely predicts the
@@ -55,7 +55,7 @@ const AboutUsSection = () => {
                             Our user-friendly interface ensures seamless
                             navigation, making the process of generating
                             activities and checking celestial events a breeze.
-                            Whether you're a seasoned traveler or a first-time
+                            Whether you are a seasoned traveler or a first-time
                             park-goer, NatureNerds empowers everyone to make the
                             most of their national park visit, creating memories
                             that will last a lifetime.
