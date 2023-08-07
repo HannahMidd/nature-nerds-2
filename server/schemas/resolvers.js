@@ -39,7 +39,7 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    savepark: async (parent, { parkData }, context) => {
+    savePark: async (parent, { parkData }, context) => {
       if (context.user) {
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },

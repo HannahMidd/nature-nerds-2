@@ -1,6 +1,22 @@
-const { Schema } = require('mongoose');
+
 
 // This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedparks` array in User.js
+const { Schema } = require('mongoose');
+
+// this object belongs to parkSchema
+const addressSchema = new Schema({
+  postalCode: {
+    type: String,
+  },
+  city: {
+    type: String,
+  },
+  stateCode: {
+    type: String,
+  },
+});
+
+
 const parkSchema = new Schema({
   activities: [
     {
@@ -8,7 +24,7 @@ const parkSchema = new Schema({
     },
   ],
   addresses: {
-    type: String,
+    type: addressSchema,
     required: true,
   },
   comments: [
@@ -32,7 +48,7 @@ const parkSchema = new Schema({
     type: String,
   },
   entranceFees: {
-    type: Number,
+    type: String,
   },
   entrancePasses: {
     type: String,
@@ -53,11 +69,11 @@ const parkSchema = new Schema({
   },
   operatingHours: {
     opening: {
-      type: Date
+      type: Date,
     },
     closing: {
-      type: Date
-    }
+      type: Date,
+    },
   },
   states: {
     type: String,
@@ -65,7 +81,7 @@ const parkSchema = new Schema({
   topics: [
     {
       type: String,
-    }
+    },
   ],
   url: {
     type: String,
