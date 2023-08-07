@@ -5,7 +5,7 @@ const typeDefs = `
     _id: ID!
     username: String!
     email: String
-    bookCount: Int
+    parkCount: Int
     savedParks: [Park]
   }
 
