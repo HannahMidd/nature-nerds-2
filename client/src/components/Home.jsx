@@ -50,6 +50,15 @@ const Navbar = () => {
 };
 
 const HeroSection = () => {
+    const handleScrollToParkSearch = () => {
+        const parkSearchSection = document.getElementById(
+            'park-search-section'
+        );
+        if (parkSearchSection) {
+            parkSearchSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="page-title">
             <h1 className="text">NATURE NERDS</h1>
@@ -59,10 +68,11 @@ const HeroSection = () => {
             </h1>
             <button
                 id="arrow-btn"
-                href="#main-scroll"
-                style={{ fontSize: 24 }}
+                onClick={handleScrollToParkSearch}
+                style={{ fontSize: 44 }}
             >
-                <i className="fa fa-chevron-circle-down"></i>
+                {' '}
+                &darr;
             </button>
         </div>
     );
