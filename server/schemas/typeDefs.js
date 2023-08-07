@@ -1,3 +1,5 @@
+
+
 const typeDefs = `
   type User {
     _id: ID!
@@ -8,32 +10,70 @@ const typeDefs = `
   }
 
   type Park {
-    activities: [Activity]
+    activities: [String]
     addresses: String
-    comments: [Comment]
+    comments: [String]
     contacts: String
     description: String
     designation: String
     directionsInfo: String
     directionsUrl: String
-    entranceFees: Number
-    encrancePasses: String
+    entranceFees: Float
+    entrancePasses: String
     images: String
-    latLong: {
-      latitude: Number
-      longitude: Number
-    }
+    latLong: Location
     name: String
-    """
-    "operatingHours: {
-      openinng: Date
-      closing: Date
-    }"
-    """
+    operatingHours: OperatingHours
     states: String
-    topics: [topic]
+    topics: [String]
     url: String
     weatherInfo: String
+  }
+
+  type Location {
+    latitude: String
+    longitude: String
+  }
+
+  type OperatingHours {
+    opening: String
+    closing: String
+  }
+
+  type Auth {
+    token: String!
+    user: User
+  }
+
+  input ParkInput {
+    activities: [String]
+    addresses: String
+    comments: [String]
+    contacts: String
+    description: String
+    designation: String
+    directionsInfo: String
+    directionsUrl: String
+    entranceFees: Float
+    entrancePasses: String
+    images: String
+    latLong: LocationInput
+    name: String
+    operatingHours: OperatingHoursInput
+    states: String
+    topics: [String]
+    url: String
+    weatherInfo: String
+  }
+
+  input LocationInput {
+    latitude: String
+    longitude: String
+  }
+
+  input OperatingHoursInput {
+    opening: String
+    closing: String
   }
 
   type Query {

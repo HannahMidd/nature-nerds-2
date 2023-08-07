@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
-// import schema from park.js
+// import schema from Park.js
 const parkSchema = require("./Park");
 
 const userSchema = new Schema(
