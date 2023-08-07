@@ -45,76 +45,81 @@ const ParkSearch = () => {
         }
     }, [searchTerm]);
     return (
-        <div className="parkSearchContainer">
-            <h2 id="SearchTitle">
-                Search for a National Park to explore its beauty:
-            </h2>
-            <div className="parkSearchBox">
-                <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={handleChange}
-                />
-                <button onClick={() => setSearchTerm('')}>Clear</button>
-                {parkData && (
-                    <div>
-                        <h2>{parkData.fullName}</h2>
-                        <p>
-                            Website:{' '}
-                            <a
-                                href={parkData.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {parkData.url}
-                            </a>
-                        </p>
-                        <h3>Address:</h3>
-                        {parkData.addresses.map((address) => (
-                            <div key={address.type}>
-                                <p>
-                                    {address.line1}, {address.city},{' '}
-                                    {address.stateCode} {address.postalCode}
-                                </p>
-                            </div>
-                        ))}
-                        <h3>Description:</h3>
-                        <p>{parkData.designation}</p>
-                        <p>{parkData.description}</p>
-                        <h3>Activities:</h3>
-                        <ul>
-                            {parkData.activities.map((activity) => (
-                                <li key={activity.id}>{activity.name}</li>
-                            ))}
-                        </ul>
-                        <h3>Images:</h3>
+        <section
+            id="park-search-section"
+            className="park-search"
+        >
+            <div className="parkSearchContainer">
+                <h2 id="SearchTitle">
+                    Search for a National Park to explore its beauty:
+                </h2>
+                <div className="parkSearchBox">
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={handleChange}
+                    />
+                    <button onClick={() => setSearchTerm('')}>Clear</button>
+                    {parkData && (
                         <div>
-                            {parkData.images.map((image) => (
+                            <h2>{parkData.fullName}</h2>
+                            <p>
+                                Website:{' '}
                                 <a
-                                    key={image.url}
-                                    href={image.url}
+                                    href={parkData.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <img
-                                        src={image.url}
-                                        alt={image.title}
-                                        style={{
-                                            width: '200px',
-                                            height: 'auto',
-                                            margin: '5px',
-                                        }}
-                                    />
+                                    {parkData.url}
                                 </a>
+                            </p>
+                            <h3>Address:</h3>
+                            {parkData.addresses.map((address) => (
+                                <div key={address.type}>
+                                    <p>
+                                        {address.line1}, {address.city},{' '}
+                                        {address.stateCode} {address.postalCode}
+                                    </p>
+                                </div>
                             ))}
+                            <h3>Description:</h3>
+                            <p>{parkData.designation}</p>
+                            <p>{parkData.description}</p>
+                            <h3>Activities:</h3>
+                            <ul>
+                                {parkData.activities.map((activity) => (
+                                    <li key={activity.id}>{activity.name}</li>
+                                ))}
+                            </ul>
+                            <h3>Images:</h3>
+                            <div>
+                                {parkData.images.map((image) => (
+                                    <a
+                                        key={image.url}
+                                        href={image.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src={image.url}
+                                            alt={image.title}
+                                            style={{
+                                                width: '200px',
+                                                height: 'auto',
+                                                margin: '5px',
+                                            }}
+                                        />
+                                    </a>
+                                ))}
+                            </div>
+                            <h3>Weather Data:</h3>
+                            <div>{parkData.weatherInfo}</div>
                         </div>
-                        <h3>Weather Data:</h3>
-                        <div>{parkData.weatherInfo}</div>
-                    </div>
-                )}
-                {parkData === null && <p>No results found.</p>}
+                    )}
+                    {parkData === null && <p>No results found.</p>}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default ParkSearch;
