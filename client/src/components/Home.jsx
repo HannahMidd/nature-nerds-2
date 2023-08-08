@@ -42,6 +42,22 @@ const Navbar = () => {
                                 ABOUT US
                             </a>
                         </li>
+                        <li className="nav-item">
+                            <a
+                                href="#Login"
+                                className="btn nav-link"
+                            >
+                                LOGIN
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a
+                                href="#Signup"
+                                className="btn nav-link"
+                            >
+                                SIGNUP
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

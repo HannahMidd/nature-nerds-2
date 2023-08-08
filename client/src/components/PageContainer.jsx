@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ParkSearch from './ParkSearch';
-import HomeContent from './Home';
-import AboutUs from './pages/AboutUs';
+import Home from './Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 export default function PageContainer() {
@@ -10,8 +9,8 @@ export default function PageContainer() {
         if (currentPage === 'Home') {
             return <Home />;
         }
-        if (currentPage === 'AboutUs') {
-            return <AboutUs />;
+        if (currentPage === 'Signup') {
+            return <Signup />;
         }
         if (currentPage === 'Login') {
             return <Login />;
