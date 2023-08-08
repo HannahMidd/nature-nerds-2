@@ -43,6 +43,10 @@
 
 // export default ParentComponent;
 
+// earlier code ^^
+
+
+
 
 import React, { useState } from "react";
 import AccuWeather from "./AccuWeather";
