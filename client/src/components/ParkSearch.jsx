@@ -240,7 +240,7 @@ const ParkSearch = ({ searchTerm }) => {
                       src={image.url}
                       alt={image.title}
                       style={{
-                        width: "200px",
+                        width: "300px",
                         height: "auto",
                         margin: "5px",
                       }}
