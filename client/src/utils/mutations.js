@@ -26,7 +26,7 @@ export const ADD_USER = gql`
 
 export const SAVE_PARK = gql`
   mutation savePark($parkData: ParkInput!) {
-    savepark(parkData: $parkData) {
+    savePark(parkData: $parkData) {
       _id
       username
       email
