@@ -30,35 +30,29 @@ export default function Navbar() {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a href="/" className="btn nav-link">
-                <Link
-                to="/">
-                  HOME
-                </Link>
+                <Link to="/">HOME</Link>
               </a>
             </li>
             <li className="nav-item">
               <a href="/aboutus" className="btn nav-link">
-                <Link
-                to="/aboutus">
-                  ABOUT US
-                </Link>
+                <Link to="/aboutus">ABOUT US</Link>
               </a>
             </li>
 
             <li className="nav-item">
               <a href="/login" className="btn nav-link">
-                <Link
-                to="/login">
-                  LOGIN
-                </Link>
+                <Link to="/login">LOGIN</Link>
               </a>
             </li>
             <li className="nav-item">
               <a href="/signup" className="btn nav-link">
-                <Link
-                to="/signup">
-                  SIGNUP
-                </Link>
+                <Link to="/signup">SIGNUP</Link>
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a href="/savedparks" className="btn nav-link">
+                <Link to="/savedparks">SAVED PARKS</Link>
               </a>
             </li>
           </ul>

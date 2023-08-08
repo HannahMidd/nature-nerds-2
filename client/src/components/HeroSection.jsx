@@ -24,3 +24,26 @@ export default function HeroSection() {
     </div>
   );
 }
+
+
+// import React from 'react';
+
+// export default function HeroSection({ scrollToParkSearch }) {
+//   return (
+//     <div className="page-title">
+//       <h1 className="text">NATURE NERDS</h1>
+//       <h1 className="text2">
+//         EXPLORE THE BEAUTY OF NATIONAL PARKS <br /> WITH A LITTLE GUIDANCE FROM
+//         CODING NERDS
+//       </h1>
+//       <button
+//         id="arrow-btn"
+//         onClick={scrollToParkSearch} 
+//         style={{ fontSize: 44 }}
+//       >
+//         {" "}
+//         &darr;
+//       </button>
+//     </div>
+//   );
+// }
