@@ -1,7 +1,7 @@
 import './App.css';
-import ParkSearch from './components/ParkSearch';
-import HomeContent from './components/Home';
-import AboutUs from './components/pages/AboutUs';
+import Navbar from './components/Navbar';
+import { Outlet } from 'react-router-dom';
+
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AccuWeather from './components/AccuWeather';
@@ -17,11 +17,8 @@ function App() {
     return (
         <ApolloProvider client={client}>
             <div>
-                <HomeContent />
-                {/* <ParkSearch /> */}
-                <ParentComponent />
-                {/* <AccuWeather /> */}
-                <AboutUs />
+                <Navbar />
+                <Outlet />
             </div>
         </ApolloProvider>
     );
