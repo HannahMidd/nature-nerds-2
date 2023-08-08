@@ -1,5 +1,4 @@
-import React from 'react';
-
+/* eslint-disable react/no-unescaped-entities */
 const AboutUsSection = () => {
     return (
         <section id="AboutUsSection">
