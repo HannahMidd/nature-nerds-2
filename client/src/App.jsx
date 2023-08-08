@@ -5,6 +5,7 @@ import AboutUs from './components/pages/AboutUs';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AccuWeather from './components/AccuWeather';
+import ParentComponent from './components/ParentComponent';
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -17,8 +18,9 @@ function App() {
         <ApolloProvider client={client}>
             <div>
                 <HomeContent />
-                <ParkSearch />
-                <AccuWeather />
+                {/* <ParkSearch /> */}
+                <ParentComponent />
+                {/* <AccuWeather /> */}
                 <AboutUs />
             </div>
         </ApolloProvider>
