@@ -8,7 +8,7 @@ Welcome to the National Park Activity Suggestions App! 🏞️🌲
 
 This web application aims to provide users with exciting activity suggestions based on nearby national parks. Whether you're a nature enthusiast, an adventure seeker, or simply looking for a peaceful getaway, this app has got you covered! Using the power of MERN (MongoDB, Express, React, Node.js) stack, we've created an intuitive and user-friendly platform to inspire and plan your next adventure.
 
-![PortfolioScreenshot](./public/assets/homescreenshot.png)
+![PortfolioScreenshot](./client/public/assets/homescreenshot.png)
 
 ## Features
 
