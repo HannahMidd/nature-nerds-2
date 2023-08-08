@@ -30,8 +30,13 @@ const Navbar = () => {
                 HOME
               </a>
             </li>
+            {/* <li className="nav-item">
+              {/* <a href="#AboutUsSection" className="btn nav-link"> */}
+            {/* ABOUT US */}
+            {/* </a> */}
+            {/* </li> */}
             <li className="nav-item">
-              <a href="#AboutUsSection" className="btn nav-link">
+              <a href="./pages/AboutUs" className="btn nav-link">
                 ABOUT US
               </a>
             </li>

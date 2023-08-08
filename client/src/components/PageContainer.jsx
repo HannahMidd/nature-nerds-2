@@ -3,12 +3,13 @@ import HomeContent from './Home';
 import AboutUsSection from "./pages/AboutUs";
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import { capitalizeFirstLetter } from '../../../server/utils/Helpers';
+// import capitalizeFirstLetter from '../../../server/utils/Helpers';
+import PropTypes from 'prop-types';
 
-function PageContainer({ currentPage }) {
+function PageContainer(props) {
 
   const renderPage = () => {
-    switch (name) {
+    switch (props.currentPage) {
       case 'about us':
         return <AboutUsSection />;
       case 'login':
@@ -22,9 +23,13 @@ function PageContainer({ currentPage }) {
 
   return (
     <section>
-      <h2>{capitalizeFirstLetter(name)}</h2>
-      <PageContainer>{renderPage()} </PageContainer>
+      {renderPage()}
     </section>
   );
 }
+
+PageContainer.propTypes = {
+  currentPage: PropTypes.object,
+}
+
 export default PageContainer;

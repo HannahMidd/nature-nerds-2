@@ -20,7 +20,7 @@ const HeroSection = () => {
 const HomeApp = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <section id="main-scroll" className="main-container"></section>
     </div>
