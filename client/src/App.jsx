@@ -4,6 +4,7 @@ import HomeContent from './components/Home';
 import AboutUs from './components/pages/AboutUs';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AccuWeather from './components/AccuWeather';
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -17,6 +18,7 @@ function App() {
             <div>
                 <HomeContent />
                 <ParkSearch />
+                <AccuWeather />
                 <AboutUs />
             </div>
         </ApolloProvider>
