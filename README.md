@@ -1,6 +1,5 @@
 # Nature Nerds
 
-![National Parks](https://example.com/national-parks-banner.jpg)
 
 ## Introduction
 
