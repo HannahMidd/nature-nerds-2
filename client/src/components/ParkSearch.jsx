@@ -3,6 +3,7 @@ import axios from 'axios';
 const ParkSearch = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [parkData, setParkData] = useState(null);
+    // const [weatherData, setWeatherData ] = useState(null);
     const handleChange = (event) => {
         setSearchTerm(event.target.value);
     };
