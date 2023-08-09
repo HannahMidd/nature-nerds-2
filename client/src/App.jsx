@@ -1,9 +1,11 @@
 import './App.css';
-import ParkSearch from './components/ParkSearch';
-import HomeContent from './components/Home';
-import AboutUs from './components/pages/AboutUs';
+import Navbar from './components/Navbar';
+import { Outlet } from 'react-router-dom';
+
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AccuWeather from './components/AccuWeather';
+import ParentComponent from './components/ParentComponent';
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -15,10 +17,10 @@ function App() {
     return (
         <ApolloProvider client={client}>
             <div>
-                <HomeContent />
-                <ParkSearch />
-                <AboutUs />
+                <Navbar />
+                <Outlet />
             </div>
+            {/* <div><ParentComponent /></div> */}
         </ApolloProvider>
     );
 }
