@@ -140,6 +140,34 @@
     margin-top: 15px;
 
 }
+
+.loginFormPage {
+    background-image: url('../public/assets/hikers.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 35%;
+}
+
+#loginBtn {
+    background-color: var(--color-2);
+    color: black;
+    width: 30%;
+    border: 2px solid var(--color-2);
+    margin-top: 15px;
+
+}
 /* Applies to about us section and headshot */
 #headshot {
     height: 300px;
