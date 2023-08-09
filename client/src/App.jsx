@@ -20,6 +20,7 @@ function App() {
                 <Navbar />
                 <Outlet />
             </div>
+            {/* <div><ParentComponent /></div> */}
         </ApolloProvider>
     );
 }

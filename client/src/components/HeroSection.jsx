@@ -1,9 +1,17 @@
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 export default function HeroSection() {
+  const parkSearchRef = useRef(null);
+  const navigate = useNavigate();
+
   const handleScrollToParkSearch = () => {
-    const parkSearchSection = document.getElementById("park-search-section");
-    if (parkSearchSection) {
-      parkSearchSection.scrollIntoView({ behavior: "smooth" });
+    if (parkSearchRef.current) {
+      parkSearchRef.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleNavigateToSearch = () => {
+    navigate("/search");
   };
 
   return (
@@ -15,20 +23,26 @@ export default function HeroSection() {
       </h1>
       <button
         id="arrow-btn"
-        onClick={handleScrollToParkSearch}
+        onClick={handleNavigateToSearch}
         style={{ fontSize: 44 }}
       >
-        {" "}
         &darr;
       </button>
+
+      <div ref={parkSearchRef}></div>
     </div>
   );
 }
 
+// earlier code
+// export default function HeroSection() {
+//   const handleScrollToParkSearch = () => {
+//     const parentComponentContainer = document.getElementById("parent-search-section");
+//     if (parentComponentContainer) {
+//       parentComponentContainer.scrollIntoView({ behavior: "smooth" });
+//     }
+//   };
 
-// import React from 'react';
-
-// export default function HeroSection({ scrollToParkSearch }) {
 //   return (
 //     <div className="page-title">
 //       <h1 className="text">NATURE NERDS</h1>
@@ -38,7 +52,7 @@ export default function HeroSection() {
 //       </h1>
 //       <button
 //         id="arrow-btn"
-//         onClick={scrollToParkSearch} 
+//         onClick={handleScrollToParkSearch}
 //         style={{ fontSize: 44 }}
 //       >
 //         {" "}

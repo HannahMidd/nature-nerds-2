@@ -34,6 +34,12 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a href="/search" className="btn nav-link">
+                <Link to="/search">SEARCH</Link>
+              </a>
+            </li>
+
+            <li className="nav-item">
               <a href="/aboutus" className="btn nav-link">
                 <Link to="/aboutus">ABOUT US</Link>
               </a>

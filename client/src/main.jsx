@@ -5,28 +5,33 @@ import Signup from './components/pages/Signup';
 import App from "./App.jsx";
 import AboutUsSection from "./components/pages/AboutUs";
 import Home from './components/Home';
+import Search from './components/Search';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
-    errorElement: '',
-    children: [ 
+    errorElement: "",
+    children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: '/login',
-        element: <Login />
+        path: "/login",
+        element: <Login />,
       },
       {
-        path: '/signup',
-        element: <Signup />
+        path: "/signup",
+        element: <Signup />,
       },
       {
-        path: '/aboutus',
-        element: <AboutUsSection />
+        path: "/aboutus",
+        element: <AboutUsSection />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
       },
     ],
   },
