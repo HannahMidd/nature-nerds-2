@@ -4,8 +4,8 @@ import { Outlet } from 'react-router-dom';
 
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AccuWeather from './components/AccuWeather';
-import ParentComponent from './components/ParentComponent';
+// import AccuWeather from './components/AccuWeather';
+// import ParentComponent from './components/ParentComponent';
 
 const client = new ApolloClient({
     uri: '/graphql',
