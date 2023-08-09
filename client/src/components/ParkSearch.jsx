@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -53,7 +52,7 @@ const ParkSearch = ({ searchTerm }) => {
   return (
     <section id="park-search-section" className="park-search">
       <div className="parkSearchContainer">
-        <h2 id="SearchTitle">National Park :</h2>
+        
         <div className="parkSearchBox">
           
           {parkData && (
