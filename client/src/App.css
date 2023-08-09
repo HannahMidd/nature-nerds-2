@@ -156,7 +156,7 @@
 
 .parkSearchContainer {
     background-image: url('/assets/hero2.avif');
-    height: 100vh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -171,7 +171,7 @@
     text-align: center;
     padding: 10px;
     margin: 150px;
-    margin-bottom: 225px;
+    margin-bottom: 80vh;
 }
 /* About Us Section */
 
