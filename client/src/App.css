@@ -2,7 +2,7 @@
 
 :root {
     --color-1: rgb(4, 4, 145);
-    --color-2: rgb(224, 137, 110);
+    --color-2: rgb(218, 141, 118);
     --color-3: rgb(89, 168, 192);
 }
 
@@ -177,11 +177,12 @@
 
 #AboutUsSection {
     background-image: url('/assets/hero.avif');
+    height: 100vh;
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: auto; */
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 .aboutUsTitle {
     color: black;
