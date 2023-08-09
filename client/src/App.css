@@ -2,7 +2,7 @@
 
 :root {
     --color-1: rgb(4, 4, 145);
-    --color-2: rgb(179, 80, 50);
+    --color-2: rgb(196, 104, 76);
     --color-3: rgb(89, 168, 192);
 }
 
@@ -104,11 +104,12 @@
 
 /* Applies to nav buttons */
 
-.btn {
+.nav-link {
     background-color: transparent;
-    color: white;
+    color: var(--color-2) !important;
     margin-left: 5px;
     outline: none;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -124,7 +125,7 @@
 
 #arrow-btn {
     font-size: 24px;
-    margin-top: 300px;
+    margin-top: 200px;
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -145,34 +146,41 @@
 /* Applies to entire park search section */
 #SearchTitle {
     padding-top: 25px;
+    padding-bottom: 25px;
+    /* color: whitesmoke; */
+}
+
+#searchForm {
+    padding-bottom: 25px;
 }
 
 .parkSearchContainer {
     background-image: url('/assets/hero2.avif');
-    height: auto;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Add this line to stack elements vertically */
-    padding: 75px;
+
 }
 
 .parkSearchBox {
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    padding: 20px;
-    margin: 50px;
-    /* height: auto; */
+    padding: 10px;
+    margin: 150px;
+    margin-bottom: 225px;
 }
 /* About Us Section */
 
 #AboutUsSection {
     background-image: url('/assets/hero.avif');
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    /* height: auto; */
     padding-bottom: 200px;
 }
 .aboutUsTitle {
@@ -197,7 +205,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 20px;
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 #about-Us-text {
